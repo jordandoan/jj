@@ -15,6 +15,11 @@
 		1BF4D545243166B800064E31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF4D543243166B800064E31 /* LaunchScreen.storyboard */; };
 		1BF4D550243166B900064E31 /* jj_is_beautifulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4D54F243166B900064E31 /* jj_is_beautifulTests.swift */; };
 		1BF4D55B243166B900064E31 /* jj_is_beautifulUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4D55A243166B900064E31 /* jj_is_beautifulUITests.swift */; };
+		1BF4D56F2431675500064E31 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF4D56E2431675500064E31 /* Messages.framework */; };
+		1BF4D5722431675500064E31 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4D5712431675500064E31 /* MessagesViewController.swift */; };
+		1BF4D5752431675500064E31 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF4D5732431675500064E31 /* MainInterface.storyboard */; };
+		1BF4D5772431675700064E31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF4D5762431675700064E31 /* Assets.xcassets */; };
+		1BF4D57B2431675700064E31 /* jj.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1BF4D56C2431675500064E31 /* jj.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +37,28 @@
 			remoteGlobalIDString = 1BF4D534243166B600064E31;
 			remoteInfo = "jj is beautiful";
 		};
+		1BF4D5792431675700064E31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BF4D52D243166B600064E31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BF4D56B2431675500064E31;
+			remoteInfo = jj;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1BF4D57F2431675700064E31 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1BF4D57B2431675700064E31 /* jj.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1BF4D535243166B600064E31 /* jj is beautiful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jj is beautiful.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +75,12 @@
 		1BF4D556243166B900064E31 /* jj is beautifulUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "jj is beautifulUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF4D55A243166B900064E31 /* jj_is_beautifulUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jj_is_beautifulUITests.swift; sourceTree = "<group>"; };
 		1BF4D55C243166B900064E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BF4D56C2431675500064E31 /* jj.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = jj.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BF4D56E2431675500064E31 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		1BF4D5712431675500064E31 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		1BF4D5742431675500064E31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1BF4D5762431675700064E31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BF4D5782431675700064E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +105,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1BF4D5692431675500064E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BF4D56F2431675500064E31 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +122,8 @@
 				1BF4D537243166B600064E31 /* jj is beautiful */,
 				1BF4D54E243166B900064E31 /* jj is beautifulTests */,
 				1BF4D559243166B900064E31 /* jj is beautifulUITests */,
+				1BF4D5702431675500064E31 /* jj */,
+				1BF4D56D2431675500064E31 /* Frameworks */,
 				1BF4D536243166B600064E31 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +134,7 @@
 				1BF4D535243166B600064E31 /* jj is beautiful.app */,
 				1BF4D54B243166B900064E31 /* jj is beautifulTests.xctest */,
 				1BF4D556243166B900064E31 /* jj is beautifulUITests.xctest */,
+				1BF4D56C2431675500064E31 /* jj.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +179,25 @@
 			path = "jj is beautifulUITests";
 			sourceTree = "<group>";
 		};
+		1BF4D56D2431675500064E31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BF4D56E2431675500064E31 /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BF4D5702431675500064E31 /* jj */ = {
+			isa = PBXGroup;
+			children = (
+				1BF4D5712431675500064E31 /* MessagesViewController.swift */,
+				1BF4D5732431675500064E31 /* MainInterface.storyboard */,
+				1BF4D5762431675700064E31 /* Assets.xcassets */,
+				1BF4D5782431675700064E31 /* Info.plist */,
+			);
+			path = jj;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,10 +208,12 @@
 				1BF4D531243166B600064E31 /* Sources */,
 				1BF4D532243166B600064E31 /* Frameworks */,
 				1BF4D533243166B600064E31 /* Resources */,
+				1BF4D57F2431675700064E31 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1BF4D57A2431675700064E31 /* PBXTargetDependency */,
 			);
 			name = "jj is beautiful";
 			productName = "jj is beautiful";
@@ -192,6 +256,23 @@
 			productReference = 1BF4D556243166B900064E31 /* jj is beautifulUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1BF4D56B2431675500064E31 /* jj */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BF4D57C2431675700064E31 /* Build configuration list for PBXNativeTarget "jj" */;
+			buildPhases = (
+				1BF4D5682431675500064E31 /* Sources */,
+				1BF4D5692431675500064E31 /* Frameworks */,
+				1BF4D56A2431675500064E31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jj;
+			productName = jj;
+			productReference = 1BF4D56C2431675500064E31 /* jj.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -213,6 +294,9 @@
 						CreatedOnToolsVersion = 11.4;
 						TestTargetID = 1BF4D534243166B600064E31;
 					};
+					1BF4D56B2431675500064E31 = {
+						CreatedOnToolsVersion = 11.4;
+					};
 				};
 			};
 			buildConfigurationList = 1BF4D530243166B600064E31 /* Build configuration list for PBXProject "jj is beautiful" */;
@@ -231,6 +315,7 @@
 				1BF4D534243166B600064E31 /* jj is beautiful */,
 				1BF4D54A243166B900064E31 /* jj is beautifulTests */,
 				1BF4D555243166B900064E31 /* jj is beautifulUITests */,
+				1BF4D56B2431675500064E31 /* jj */,
 			);
 		};
 /* End PBXProject section */
@@ -257,6 +342,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BF4D56A2431675500064E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BF4D5772431675700064E31 /* Assets.xcassets in Resources */,
+				1BF4D5752431675500064E31 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +383,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1BF4D5682431675500064E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BF4D5722431675500064E31 /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -302,6 +404,11 @@
 			target = 1BF4D534243166B600064E31 /* jj is beautiful */;
 			targetProxy = 1BF4D557243166B900064E31 /* PBXContainerItemProxy */;
 		};
+		1BF4D57A2431675700064E31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BF4D56B2431675500064E31 /* jj */;
+			targetProxy = 1BF4D5792431675700064E31 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -311,6 +418,14 @@
 				1BF4D544243166B800064E31 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1BF4D5732431675500064E31 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BF4D5742431675500064E31 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -433,6 +548,7 @@
 		1BF4D560243166B900064E31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"jj is beautiful/Preview Content\"";
@@ -452,6 +568,7 @@
 		1BF4D561243166B900064E31 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"jj is beautiful/Preview Content\"";
@@ -548,6 +665,44 @@
 			};
 			name = Release;
 		};
+		1BF4D57D2431675700064E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = jj/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jj.ios.jj-is-beautiful.jj";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BF4D57E2431675700064E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = jj/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jj.ios.jj-is-beautiful.jj";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,6 +738,15 @@
 			buildConfigurations = (
 				1BF4D566243166B900064E31 /* Debug */,
 				1BF4D567243166B900064E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BF4D57C2431675700064E31 /* Build configuration list for PBXNativeTarget "jj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BF4D57D2431675700064E31 /* Debug */,
+				1BF4D57E2431675700064E31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
