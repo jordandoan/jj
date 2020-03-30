@@ -11,6 +11,17 @@ import Messages
 
 class MessagesViewController: MSMessagesAppViewController {
     
+    @IBOutlet weak var label: UILabel!
+    @IBAction func button(_ sender: Any) {
+        label.text = "Jesus Christ"
+        let layout = MSMessageTemplateLayout()
+        layout.caption = "PERFECTION"
+        layout.image = UIImage(named: "aj.jpg")
+        
+        let message = MSMessage()
+        message.layout = layout
+        activeConversation?.insert(message, completionHandler: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
