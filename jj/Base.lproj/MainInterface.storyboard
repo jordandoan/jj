@@ -43,7 +43,7 @@
                                 <rect key="frame" x="241" y="96" width="65" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Angelica's Horny Button"/>
+                                <state key="normal" title="Angelica's Useless Button"/>
                                 <connections>
                                     <action selector="spencer:" destination="ObA-dk-sSI" eventType="touchUpInside" id="joQ-5I-TRV"/>
                                 </connections>
