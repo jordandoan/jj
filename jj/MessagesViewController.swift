@@ -14,13 +14,26 @@ class MessagesViewController: MSMessagesAppViewController {
     @IBOutlet weak var label: UILabel!
     @IBAction func button(_ sender: Any) {
         label.text = "Jesus Christ"
+        let arr = ["aj.jpg", "aj2.jpg", "aj3.jpeg"]
+        sendMessage(image: arr.randomElement()!, caption: "PERFECTION!!!")
+    }
+    @IBAction func spencer(_ sender: Any) {
+        
+        sendMessage(image: "spencer.jpg", caption: "Smart guy")
+    }
+    @IBAction func mimori(_ sender: Any) {
+        
+        sendMessage(image: "mimori.jpeg", caption: "Love you forever")
+    }
+    
+    private func sendMessage(image: String, caption: String) {
         let layout = MSMessageTemplateLayout()
-        layout.caption = "PERFECTION"
-        layout.image = UIImage(named: "aj.jpg")
+        layout.caption = caption
+        layout.image = UIImage(named: image)
         
         let message = MSMessage()
         message.layout = layout
-        activeConversation?.insert(message, completionHandler: nil)
+        activeConversation?.send(message, completionHandler: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
